@@ -18,14 +18,21 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.google.android.samples.dynamicfeatures">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:name="com.google.android.play.core.splitcompat.SplitCompatApplication"
+        android:name=".AppAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

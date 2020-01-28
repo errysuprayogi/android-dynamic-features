@@ -27,4 +27,6 @@ android {
 
 dependencies {
     implementation project(':app')
+//    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+
 }

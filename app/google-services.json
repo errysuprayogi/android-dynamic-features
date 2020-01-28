@@ -1,0 +1,454 @@
+{
+  "project_info": {
+    "project_number": "692092518182",
+    "firebase_url": "https://tkpd-tokopedia-2014.firebaseio.com",
+    "project_id": "tkpd-tokopedia-2014",
+    "storage_bucket": "tkpd-tokopedia-2014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:9bb64c665e7c68ee",
+        "android_client_info": {
+          "package_name": "com.tokopedia.core"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:ca3ce8bb48dfda92",
+        "android_client_info": {
+          "package_name": "com.tokopedia.inbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:78ec4b07f12bee1e",
+        "android_client_info": {
+          "package_name": "com.tokopedia.kelontongapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:82058ddb4abd80bc",
+        "android_client_info": {
+          "package_name": "com.tokopedia.lite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:95666ef568877475",
+        "android_client_info": {
+          "package_name": "com.tokopedia.sellerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:f84c5c47b1aa2451904be7",
+        "android_client_info": {
+          "package_name": "com.tokopedia.sobatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:f4cc247c743f7921",
+        "android_client_info": {
+          "package_name": "com.tokopedia.tkpd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-fo1hrnctho1gmatr3v6gpimjoe5u0e3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd",
+            "certificate_hash": "084e9f560c5de60f3a71c9c744973ad39214dbf9"
+          }
+        },
+        {
+          "client_id": "692092518182-cj79rnpc8atn755lgej2grp3ehhspg0p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd",
+            "certificate_hash": "9476adbbe94561705c647e2e22084381b9745c08"
+          }
+        },
+        {
+          "client_id": "692092518182-jb8uleqc5kljl8n7b4j1l4jejcur6v4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd",
+            "certificate_hash": "0d29e68925447733d26f314337aa7ee875d12602"
+          }
+        },
+        {
+          "client_id": "692092518182-rt9cek8vrc26nktqdm54b27dn9oepo1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd",
+            "certificate_hash": "c6ae81f9ccf1b404152dac861418ded6cd763481"
+          }
+        },
+        {
+          "client_id": "692092518182-ipb98gtft2ubip9m69j74jrlikjcus0s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd",
+            "certificate_hash": "8fb89a43a31199ac78d1f1c2a242388ba1db9fae"
+          }
+        },
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:9035348286f020d7",
+        "android_client_info": {
+          "package_name": "com.tokopedia.tkpd.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-ken81sf557tgimgn5v1ijk93l8mukvd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd.alpha",
+            "certificate_hash": "084e9f560c5de60f3a71c9c744973ad39214dbf9"
+          }
+        },
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692092518182:android:3e7b46b8c92c1c9d",
+        "android_client_info": {
+          "package_name": "com.tokopedia.tkpd.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692092518182-sccu0avhefnu3s6c159n04rjnh0o5ku2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tokopedia.tkpd.staging",
+            "certificate_hash": "084e9f560c5de60f3a71c9c744973ad39214dbf9"
+          }
+        },
+        {
+          "client_id": "692092518182-ck56neq3f1dtm11qo3pi9jaok48v6cp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM1jdKTCV-DwP366CXKfbu8zeU4TTXaeY"
+        },
+        {
+          "current_key": "AIzaSyBPkQlyhaPeNXGENO-UUSEfhbtnOzvMpUM"
+        },
+        {
+          "current_key": "AIzaSyAw5CIn7lpTUG4wIjigbNLs6Na6Fqd9pX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692092518182-mnfsbr75hvhs9lrdbl0nrt5j6h9ehu32.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692092518182-bnp4vfc3cbhktuqskok21sgenq0pn34n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tokopedia.Tokopedia",
+                "app_store_id": "1001394201"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
