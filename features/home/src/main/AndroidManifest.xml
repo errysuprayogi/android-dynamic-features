@@ -14,26 +14,21 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
+
+<!-- This feature module only contains a single assets file relevant to the Android app. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.google.android.samples.dynamicfeatures">
+    package="com.google.android.samples.dynamicfeatures.ondemand.home">
 
-    <application
-        android:name=".MyApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
+    <dist:module dist:title="@string/module_feature_home">
+        <dist:delivery>
+            <dist:install-time />
+<!--            <dist:on-demand/>-->
+        </dist:delivery>
+        <dist:fusing dist:include="true" />
+    </dist:module>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+    <!-- This feature module doesn't contain code. -->
+    <application android:hasCode="false" />
+
 </manifest>

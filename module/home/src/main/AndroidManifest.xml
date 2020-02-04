@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="robust.tokopedia" >
+
+    <application>
+        <activity android:name="com.tokopedia.home.HomeActivity" >
+
+        </activity>
+        <activity android:name="com.tokopedia.home.SecondActivity" />
+        <activity android:name="com.tokopedia.home.ThirdActivity" />
+    </application>
+</manifest>

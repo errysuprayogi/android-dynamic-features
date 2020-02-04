@@ -26,20 +26,24 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Group
-import com.google.android.play.core.splitinstall.SplitInstallManager
-import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
-import com.google.android.play.core.splitinstall.SplitInstallRequest
-import com.google.android.play.core.splitinstall.SplitInstallSessionState
-import com.google.android.play.core.splitinstall.SplitInstallStateUpdatedListener
+import com.google.android.play.core.splitinstall.*
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
+import com.meituan.robust.patch.RobustModify
+import com.meituan.robust.patch.annotaion.Add
+import kotlinx.android.synthetic.main.activity_main.*
 
-private const val packageName = "com.google.android.samples.dynamicfeatures.ondemand"
-private const val kotlinSampleClassname = "$packageName.KotlinSampleActivity"
-private const val javaSampleClassname = "$packageName.JavaSampleActivity"
-private const val nativeSampleClassname = "$packageName.NativeSampleActivity"
 
 /** Activity that displays buttons and handles loading of feature modules. */
 class MainActivity : AppCompatActivity() {
+
+    companion object{
+        private const val packageName = "com.google.android.samples.dynamicfeatures.ondemand"
+        private const val kotlinSampleClassname = "$packageName.KotlinSampleActivity"
+        private const val javaSampleClassname = "$packageName.JavaSampleActivity"
+        private const val nativeSampleClassname = "$packageName.NativeSampleActivity"
+        private const val homeSampleClassname = "robust.tokopedia.home.HomeActivity"
+        private const val TAG = "DynamicFeatures"
+    }
 
     /** Listener used to handle changes in state for install requests. */
     private val listener = SplitInstallStateUpdatedListener { state ->
@@ -74,19 +78,26 @@ class MainActivity : AppCompatActivity() {
     private val moduleJava by lazy { getString(R.string.module_feature_java) }
     private val moduleNative by lazy { getString(R.string.module_native) }
     private val moduleAssets by lazy { getString(R.string.module_assets) }
+    private val moduleHome by lazy { getString(R.string.module_feature_home) }
 
     private val clickListener by lazy {
         View.OnClickListener {
             when (it.id) {
-                R.id.btn_load_kotlin -> loadAndLaunchModule(moduleKotlin)
+                R.id.btn_load_kotlin -> lunchHomeModule()
                 R.id.btn_load_java -> loadAndLaunchModule(moduleJava)
                 R.id.btn_load_native -> loadAndLaunchModule(moduleNative)
-                R.id.btn_load_assets -> loadAndLaunchModule(moduleAssets)
+                R.id.btn_load_assets -> loadAndLaunchModule(moduleHome)
                 R.id.btn_install_all_now -> installAllFeaturesNow()
                 R.id.btn_install_all_deferred -> installAllFeaturesDeferred()
                 R.id.btn_request_uninstall -> requestUninstall()
             }
         }
+    }
+
+    @Add
+    private fun lunchHomeModule(){
+        Toast.makeText(this, "Is is test", Toast.LENGTH_LONG).show()
+//        startActivity(Intent(this, HomeActivity::class.java))
     }
 
     private lateinit var manager: SplitInstallManager
@@ -103,6 +114,10 @@ class MainActivity : AppCompatActivity() {
         manager = SplitInstallManagerFactory.create(this)
 
         initializeViews()
+
+        load_patch.setOnClickListener {
+
+        }
     }
 
     override fun onResume() {
@@ -215,6 +230,7 @@ class MainActivity : AppCompatActivity() {
                 moduleJava -> launchActivity(javaSampleClassname)
                 moduleNative -> launchActivity(nativeSampleClassname)
                 moduleAssets -> displayAssets()
+                moduleHome -> launchActivity(homeSampleClassname)
             }
         }
 
@@ -241,14 +257,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     /** Set up all view variables. */
-    private fun initializeViews() {
+    fun initializeViews() {
         buttons = findViewById(R.id.buttons)
         progress = findViewById(R.id.progress)
         progressBar = findViewById(R.id.progress_bar)
         progressText = findViewById(R.id.progress_text)
 
         setupClickListener()
+        var textView = findViewById(R.id.instructions) as TextView
+        RobustModify.modify()
+        textView.text = getStringText2()
     }
+
+    fun getStringText(): String = "haehaheh"
+
+    private fun getStringText2(): String = "Sample Test App Hotfix"
 
     /** Set all click listeners required for the buttons on the UI. */
     private fun setupClickListener() {
@@ -282,11 +305,10 @@ class MainActivity : AppCompatActivity() {
         progress.visibility = View.GONE
         buttons.visibility = View.VISIBLE
     }
+
+    fun toastAndLog(text: String) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show()
+        Log.d(TAG, text)
+    }
 }
 
-fun MainActivity.toastAndLog(text: String) {
-    Toast.makeText(this, text, Toast.LENGTH_LONG).show()
-    Log.d(TAG, text)
-}
-
-private const val TAG = "DynamicFeatures"

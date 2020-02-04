@@ -19,6 +19,10 @@ include ':assets'
 include ':java'
 include ':kotlin'
 include ':native'
+include ':home'
+
+include ':library:hotfixsdk'
+include ':module:home'
 
 // Allows to have the four features modules shown in AS's Android view
 // without an empty "features" module.
@@ -26,3 +30,4 @@ project(":assets").projectDir = new File(rootDir, "features/assets")
 project(":java").projectDir = new File(rootDir, "features/java")
 project(":kotlin").projectDir = new File(rootDir, "features/kotlin")
 project(":native").projectDir = new File(rootDir, "features/native")
+project(":home").projectDir = new File(rootDir, "features/home")
