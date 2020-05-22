@@ -23,6 +23,7 @@ if (project.hasProperty("robust")) {
 }
 
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.firebase-perf'
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -35,7 +36,18 @@ android {
         targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
+
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 
     signingConfigs {
         release {
@@ -47,7 +59,14 @@ android {
     }
 
     buildTypes {
-        debug {}
+        debug {
+//            FirebasePerformance {
+//                // Set this flag to 'false' to disable @AddTrace annotation processing and
+//                // automatic HTTP/S network request monitoring
+//                // for a specific build variant at compile time.
+//                instrumentationEnabled true
+//            }
+        }
         release {
             signingConfig signingConfigs.release
             minifyEnabled true
@@ -81,6 +100,11 @@ dependencies {
     api 'com.google.android.material:material:1.0.0'
     api "com.google.android.play:core:${versions.playcore}"
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
+
+    implementation 'com.google.firebase:firebase-perf:19.0.5'
+    implementation 'androidx.multidex:multidex:2.0.1'
     api project(path: ':library:hotfixsdk')
 //    api project(path: ':module:home')
 }
+
+apply plugin: 'com.google.gms.google-services'

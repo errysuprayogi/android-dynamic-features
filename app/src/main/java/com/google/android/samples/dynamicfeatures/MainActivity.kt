@@ -16,6 +16,10 @@
 
 package com.google.android.samples.dynamicfeatures
 
+//import com.google.firebase.perf.FirebasePerformance
+//import com.google.firebase.perf.metrics.Trace
+
+import android.R.id
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -28,11 +32,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Group
 import com.google.android.play.core.splitinstall.*
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
+import com.google.firebase.perf.FirebasePerformance
+import com.google.firebase.perf.metrics.Trace
+
 import com.meituan.robust.patch.RobustModify
 import com.meituan.robust.patch.annotaion.Add
 import kotlinx.android.synthetic.main.activity_main.*
 
 
+private const val packageName = "com.google.android.samples.dynamicfeatures.ondemand"
+private const val kotlinSampleClassname = "$packageName.KotlinSampleActivity"
+private const val javaSampleClassname = "$packageName.JavaSampleActivity"
+private const val nativeSampleClassname = "$packageName.NativeSampleActivity"
+private lateinit var trace: Trace
+
+private const val STARTUP_TRACE_NAME = "downloading_df_trace"
+
+/** Activity that displays buttons and handles loading of feature modules. */
+class MainActivity : AppCompatActivity() {
 /** Activity that displays buttons and handles loading of feature modules. */
 class MainActivity : AppCompatActivity() {
 
@@ -52,6 +69,9 @@ class MainActivity : AppCompatActivity() {
         when (state.status()) {
             SplitInstallSessionStatus.DOWNLOADING -> {
                 //  In order to see this, the application has to be uploaded to the Play Store.
+                // Begin tracing app startup tasks.
+                Log.d(TAG, "Starting trace")
+                trace.start()
                 displayLoadingState(state, "Downloading $names")
             }
             SplitInstallSessionStatus.REQUIRES_USER_CONFIRMATION -> {
@@ -69,6 +89,8 @@ class MainActivity : AppCompatActivity() {
 
             SplitInstallSessionStatus.INSTALLING -> displayLoadingState(state, "Installing $names")
             SplitInstallSessionStatus.FAILED -> {
+                Log.d(TAG, "Stopping trace")
+                trace.stop()
                 toastAndLog("Error: ${state.errorCode()} for module ${state.moduleNames()}")
             }
         }
@@ -110,6 +132,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        trace = FirebasePerformance.getInstance().newTrace(STARTUP_TRACE_NAME)
 
         manager = SplitInstallManagerFactory.create(this)
 
@@ -233,7 +257,8 @@ class MainActivity : AppCompatActivity() {
                 moduleHome -> launchActivity(homeSampleClassname)
             }
         }
-
+        Log.d(TAG, "Stopping trace")
+        trace.stop()
         displayButtons()
     }
 
